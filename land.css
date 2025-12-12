@@ -231,8 +231,24 @@ a {
   background: #f97316;
 }
 .trust-message {
-  color: var(--muted);
-  font-size: 0.95rem;
+    /* Base style */
+    font-size: 1rem; /* Slightly larger than current */
+    font-weight: 500; /* Medium weight */
+    color: var(--text-color); /* Use standard text color */
+    margin: 3rem 0; /* Add a little vertical space */
+}
+
+.trust-message a {
+    /* Link styling */
+    color: var(--primary-color); /* Highlight the number in your brand color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 700; /* Make the number BOLD */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.trust-message a:hover {
+    color: var(--hover-color, #0056b3); /* Darker shade on hover */
+    text-decoration: underline; /* Add underline back on hover for clarity */
 }
 
 /* HERO IMAGE */
